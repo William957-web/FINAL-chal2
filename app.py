@@ -17,7 +17,7 @@ def index():
 
 @app.route('/api/search', methods=['POST'])
 def api_search():
-    code =  request.values.get('code')
+    code =  flask.request.values.get('code')
     name = db_search(code)
     if name is None:
         flask.abort(404, "No such country")
