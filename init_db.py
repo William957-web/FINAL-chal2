@@ -15,7 +15,7 @@ conn.execute(f"INSERT INTO s3cr3t VALUES (?)", (FLAG,))
 
 # Country list from https://gist.github.com/vxnick/380904
 countries = [
-    ('HINT', 'sqlmap -u "https://chal2.onrender.com/api/search" --data "{code: \\"CA\\"}"'),
+    ('HINT', 'sqlmap -u "https://chal2.onrender.com/api/search" --data "code=CA" --dump'),
     ('AF', 'Afghanistan'),
     ('AX', 'Aland Islands'),
     ('AL', 'Albania'),
