@@ -7,7 +7,7 @@ app = flask.Flask(__name__)
 def db_search(code):
     with sqlite3.connect('database.db') as conn:
         cur = conn.cursor()
-        cur.execute(f"SELECT name FROM country WHERE code='{code}')
+        cur.execute(f"SELECT name FROM country WHERE code='{code}'")
         found = cur.fetchone()
     return None if found is None else found[0]
 
