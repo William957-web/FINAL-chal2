@@ -21,7 +21,7 @@
        fetch('/api/search', {
          method: 'POST',
          headers: {'Content-Type': 'application/json'},
-         body: code
+         body: 'code='+code
        }).then(response => {
          if (response.status !== 200) {
            setText("Country code is not found");
