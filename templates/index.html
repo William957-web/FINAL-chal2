@@ -40,6 +40,6 @@
     <input id="code" type="text" maxlength="2" style="width: 2em;" required>
     <button onclick="queryCountryCode()">Search</button>
     <p id="result"></p>
-    <br> HINT : sql query is cur.execute(f"SELECT name FROM country WHERE code=UPPER('{code}')")</br>
+    <br> HINT : sql query is cur.execute(f"SELECT name FROM country WHERE code='{code}')</br>
   </body>
 </html>
